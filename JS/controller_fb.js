@@ -17,7 +17,8 @@ $(function () {
 
 		var play_giai_ma = false;
 
-		remove(ref(db));
+		remove(ref(db, 'variables'));
+		remove(ref(db, 'commands'));
 
 		update(ref(db, 'variables'), {
 			spinning_miliseconds: 7500,
